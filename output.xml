@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.6 on win32)" generated="2024-12-08T11:22:11.588921" rpa="false" schemaversion="5">
+<suite id="s1" name="First Robot" source="K:\robot\first_robot.robot">
+<test id="s1-t1" name="TC-001 Verify that when input correct username and password then user can login" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-08T11:22:11.877703" level="INFO">Opening browser 'chrome' to base url 'file:///K:/Doppio%20tech/ep01/ex00.html'.</msg>
+<arg>file:///K:/Doppio%20tech/ep01/ex00.html</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-08T11:22:11.877703" elapsed="1.824428"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-08T11:22:13.703128" level="INFO">Typing text 'Automate Test how to' into text field 'id=username-box'.</msg>
+<arg>id=username-box</arg>
+<arg>Automate Test how to</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-08T11:22:13.703128" elapsed="0.113732"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-08T11:22:13.817858" level="INFO">Typing text 'Automate Test how to' into text field 'id=password-box'.</msg>
+<arg>id=password-box</arg>
+<arg>Automate Test how to</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-08T11:22:13.816860" elapsed="0.093272"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-08T11:22:23.910339" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-08T11:22:13.910132" elapsed="10.000207"/>
+</kw>
+<status status="PASS" start="2024-12-08T11:22:11.876706" elapsed="12.033633"/>
+</test>
+<status status="PASS" start="2024-12-08T11:22:11.590915" elapsed="12.320421"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="First Robot">First Robot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
